@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ResumeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(ResumeController::class)->group(function (){
+    Route::get('/', 'getHome')->name('getHome');
+    Route::get('/user-dashboard', 'getUserDashboard')->name('getUserDashboard');
+    
 });

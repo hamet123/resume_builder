@@ -1,0 +1,34 @@
+
+
+
+/* styling for add circles to ends of a border */
+.specialborderdiv {
+    min-width: 300px;
+    min-height: 200px;
+    background-color: lightblue;
+    position: relative;
+    border-left:1px solid black;
+  }
+  
+  .specialborderdiv::before,
+  .specialborderdiv::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(203, 203, 203);
+    position: absolute;
+    border:1px solid black;
+  }
+  
+  .specialborderdiv::before {
+    top: -5px;
+    left: -5px;
+  }
+  
+  .specialborderdiv::after {
+    bottom: -5px;
+    left: -5px;
+  }
+
+  /* end of styling to add circles to end of border */
