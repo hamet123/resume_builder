@@ -26,7 +26,9 @@
                         <div class="menu-top-menu-container">
                             <ul id="main-menu" class="main-menu">
                                 <li style="color:rgb(179, 36, 79);font-size:20px; font-weight:bold;display: block;"><a
-                                        href="/user-dashboard"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a></li>
+                                        href="/register"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
+                                        <li style="color:rgb(179, 36, 79);font-size:20px; font-weight:bold;display: block;"><a
+                                            href="/login"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a></li>
                             </ul>
                         </div>
                         <div class="mobile-theme-switch">

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('user_skills', function (Blueprint $table) {
             $table->id();
-            $table->foriegnId('user_id')->constrained('users');
+            $table->foreignId('user_id')->constrained('users');
             $table->string('skill_name')->nullable();
             $table->integer('skill_level')->nullable();
             $table->timestamps();
